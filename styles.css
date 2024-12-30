@@ -22,16 +22,22 @@ header h1 {
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0;
 }
 
 header nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 section {
@@ -46,6 +52,20 @@ section {
 section h2 {
     margin-top: 0;
     color: #007BFF;
+    font-size: 1.8rem;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
 }
 
 footer {
@@ -53,7 +73,46 @@ footer {
     padding: 1rem 0;
     background: #007BFF;
     color: #fff;
-    position: fixed;
-    width: 100%;
+    position: relative;
     bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Additional Styling for Links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Ensure Contact Section Links Display Properly */
+#contact p {
+    margin: 10px 0;
+}
+
+/* Add Padding for Better Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 15px;
+    }
 }
