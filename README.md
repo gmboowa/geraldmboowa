@@ -1,2 +1,1 @@
-# geraldmboowa
 Gerald Mboowa 
